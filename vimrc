@@ -77,6 +77,13 @@ set visualbell t_vb=      " Turn off bell: most annoying default ever created
 
 :imap jw <Esc>
 
+" move around between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
 " python support
 " --------------
 "  don't highlight exceptions and builtins. I love to override them in local
