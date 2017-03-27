@@ -25,6 +25,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 let g:solarized_termcolors=256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
 
 " YouCompleteMe and UltiSnips compatibility, with the helper of supertab
 " (via http://stackoverflow.com/a/22253548/1626737)
@@ -90,7 +92,7 @@ nnoremap <C-H> <C-W><C-H>
 "  scopes and it sucks ass if it's highlighted then. And for exceptions I
 "  don't really want to have different colors for my own exceptions ;-)
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8
-\ formatoptions=croqj softtabstop=4 textwidth=74 comments=:#\:,:#
+\ formatoptions=croqj softtabstop=4 textwidth=79 comments=:#\:,:#
 let python_highlight_all=1
 let python_highlight_exceptions=0
 let python_highlight_builtins=0
@@ -111,6 +113,10 @@ let g:syntastic_python_checkers=[]
 "   E721 do not compare types, use 'isinstance()'
 let g:syntastic_python_flake8_args='--ignore=E121,E128,E711,E301,E261,E241,E124,E126,E721
     \ --max-line-length=84'
+
+" Markdown support
+" ----------------
+autocmd BufRead,BufNewFile *.md setlocal textwidth=80
 
 " ruby support
 " ------------
