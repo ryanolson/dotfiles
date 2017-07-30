@@ -5,7 +5,7 @@ alias ls="ls --color=always"
 alias grep="grep --color=always"
 alias egrep="egrep --color=always"
 alias ll="ls -lFtr"
-source ~/.iterm2_shell_integration.`basename $SHELL`
+#source ~/.iterm2_shell_integration.`basename $SHELL`
 
 # added by Miniconda2 4.2.12 installer
 # export PATH="/Users/ryan/.miniconda2/bin:$PATH"

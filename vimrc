@@ -77,7 +77,10 @@ set smartcase             " Case-sensitive search if query contains uppercase
 set showmatch             " Briefly jump to matching bracket when inserted
 set visualbell t_vb=      " Turn off bell: most annoying default ever created
 
-:imap jw <Esc>
+set mouse=a
+
+:imap jk <Esc>
+:imap jj <Esc>
 
 " move around between splits
 nnoremap <C-J> <C-W><C-J>

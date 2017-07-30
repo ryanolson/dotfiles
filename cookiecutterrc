@@ -1,0 +1,11 @@
+default_context:
+  full_name: "Ryan Olson"
+  email: "rolson@nvidia.com"
+  github_username: "ryanolson"
+  base_image: nvcr.io/nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+  release_image: nvcr.io/nvidian_sas/{{ cookiecutter.image_name }}
+abbreviations:
+  pp: https://github.com/audreyr/cookiecutter-pypackage.git
+  dockerfile: https://github.com/ryanolson/cc-docker.git
+  gh: https://github.com/{0}.git
+  yr: ssh://git@yagr.nvidia.com:2200/{0}.git
