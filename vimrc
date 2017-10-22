@@ -47,7 +47,6 @@ set runtimepath+=~/.vim
 
 syntax on
 syntax enable
-set number
 set encoding=utf-8
 set background=dark
 colorscheme solarized
@@ -77,7 +76,9 @@ set smartcase             " Case-sensitive search if query contains uppercase
 set showmatch             " Briefly jump to matching bracket when inserted
 set visualbell t_vb=      " Turn off bell: most annoying default ever created
 
-set mouse=a
+" set number              " line numbering
+" set mouse=a             " capture visual session with click-drag
+" set clipboard=unnamed   " y/yank goes to clipboard
 
 :imap jk <Esc>
 :imap jj <Esc>
